@@ -17,15 +17,15 @@ RUN apt-get update && \
 
 RUN apt-get update && apt-get install -y python3 python3-pip
 
-RUN pip3 install --user numpy==1.18 && \
-    pip3 install --user pandas && \
-    pip3 install --user scipy==1.1.0 && \
-    pip3 install --user regex && \
-    pip3 install --user scikit-learn && \
-    pip3 install --user seaborn && \
-    pip3 install --user statannot && \
-    pip3 install --user xlwt && \ 
-    pip3 install --user matplotlib==3.3.3 
+RUN pip3 install numpy==1.18 && \
+    pip3 install pandas && \
+    pip3 install scipy==1.1.0 && \
+    pip3 install regex && \
+    pip3 install scikit-learn && \
+    pip3 install seaborn && \
+    pip3 install statannot && \
+    pip3 install xlwt && \ 
+    pip3 install matplotlib==3.3.3 
 
 
 USER fenics
